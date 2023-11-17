@@ -5,6 +5,7 @@
     },
     "activeFile": "",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
         "level_01.tmx": {
@@ -19,12 +20,19 @@
             }
         },
         "level_02.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
             "scale": 1.557109375,
             "selectedLayer": 1,
             "viewCenter": {
                 "x": 320.14449851989366,
                 "y": 184.63699764186444
             }
+        },
+        "pixel_adventure.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         }
     },
     "last.imagePath": "/Users/elbek/StudioProjects/my_first_game/assets/images/Terrain",
@@ -37,6 +45,9 @@
     ],
     "project": "pixel_adventure.tiled-project",
     "recentFiles": [
+        "pixel_adventure.tsx",
+        "level_02.tmx",
+        "level_01.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
