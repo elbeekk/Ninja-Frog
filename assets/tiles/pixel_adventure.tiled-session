@@ -12,22 +12,23 @@
             "expandedObjectLayers": [
                 2
             ],
-            "scale": 1.5,
-            "selectedLayer": 1,
+            "scale": 0.75,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 313.66666666666663,
-                "y": 71.66666666666663
+                "x": 363.33333333333337,
+                "y": 184.66666666666669
             }
         },
         "level_02.tmx": {
             "expandedObjectLayers": [
+                3,
                 2
             ],
             "scale": 1.557109375,
-            "selectedLayer": 1,
+            "selectedLayer": 0,
             "viewCenter": {
-                "x": 320.14449851989366,
-                "y": 184.63699764186444
+                "x": 319.502282875922,
+                "y": 184.63699764186447
             }
         },
         "pixel_adventure.tsx": {
@@ -43,13 +44,14 @@
     "map.width": 40,
     "openFiles": [
         "pixel_adventure.tsx",
-        "level_01.tmx"
+        "level_01.tmx",
+        "level_02.tmx"
     ],
     "project": "pixel_adventure.tiled-project",
     "recentFiles": [
         "pixel_adventure.tsx",
-        "level_01.tmx",
-        "level_02.tmx"
+        "level_02.tmx",
+        "level_01.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

@@ -1,18 +1,20 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame_tiled/flame_tiled.dart';
 import 'package:flutter/services.dart';
 import 'package:my_first_game/components/colission_block.dart';
-import 'package:my_first_game/components/player_hitbox.dart';
+import 'package:my_first_game/components/custom_hitbox.dart';
+import 'package:my_first_game/components/fruit.dart';
 import 'package:my_first_game/components/utils.dart';
 import 'package:my_first_game/pixel_adventure.dart';
 
 enum PlayerState { idle, running, jump, doubleJump, fall, hit, wallJump }
 
 class Player extends SpriteAnimationGroupComponent
-    with HasGameRef<PixelAdventure>, KeyboardHandler {
+    with HasGameRef<PixelAdventure>, KeyboardHandler,CollisionCallbacks {
   String character;
 
   Player({this.character = 'Ninja Frog', position}) : super(position: position);
@@ -34,13 +36,12 @@ class Player extends SpriteAnimationGroupComponent
   final double _gravity = 9.8;
   final double _jumpForce = 360;
   final double _terminalVelocity = 300;
-  PlayerHitBox hitBox =
-      PlayerHitBox(offsetX: 10, offsetY: 4, width: 14, height: 28);
+  CustomHitBox hitBox =  CustomHitBox(offsetX: 10, offsetY: 4, width: 14, height: 28);
 
   @override
   FutureOr<void> onLoad() {
     _loadAllAnimations();
-    debugMode = true;
+    // debugMode = true;
     add(RectangleHitbox(
         position: Vector2(hitBox.offsetX, hitBox.offsetY),
         size: Vector2(hitBox.width, hitBox.height)));
@@ -71,6 +72,14 @@ class Player extends SpriteAnimationGroupComponent
     horizontalMovement += isLeftKeyPressed ? -1 : 0;
     horizontalMovement += isRightKeyPressed ? 1 : 0;
     return super.onKeyEvent(event, keysPressed);
+  }
+
+  @override
+  void onCollision(Set<Vector2> intersectionPoints, PositionComponent other) {
+    if(other is Fruit){
+      other.collidingWithPlayer();
+    }
+    super.onCollision(intersectionPoints, other);
   }
 
   void _loadAllAnimations() {
