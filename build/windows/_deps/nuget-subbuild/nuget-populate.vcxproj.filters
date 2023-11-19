@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-copyfile.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\21647e2b6dd2b28e8c75d053f627001a\nuget-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\0ad9c03293d313440a2d5417030db062\nuget-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\46a6979519b5070283af0207ae494aea\nuget-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\elbek\StudioProjects\my_first_game\build\windows\_deps\nuget-subbuild\CMakeFiles\nuget-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{18B70AFA-FC04-3976-AD73-710F50544EDD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
