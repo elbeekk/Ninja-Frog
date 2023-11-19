@@ -22,7 +22,7 @@ class Level extends World with HasGameRef<PixelAdventure>{
     priority=1;
     level = await TiledComponent.load('$levelName.tmx', Vector2.all(16));
     add(level);
-    _scrollingBackground();
+    // _scrollingBackground();
     _spawningObjects();
     _addCollisions();
   
@@ -47,6 +47,7 @@ class Level extends World with HasGameRef<PixelAdventure>{
       switch (spawnPoint.class_) {
         case 'Player':
           player.position = Vector2(spawnPoint.x,spawnPoint.y);
+          game.initialPosition = Vector2(spawnPoint.x, spawnPoint.y);
           player.scale.x = 1;
           add(player);
           break;

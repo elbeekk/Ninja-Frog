@@ -2,8 +2,10 @@ import 'dart:async';
 import 'dart:developer';
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
+import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_game/components/jump_button.dart';
@@ -18,11 +20,15 @@ class PixelAdventure extends FlameGame
   Player player = Player();
   late JoystickComponent joystickComponent;
   bool showControls = false;
-  List<String> levelNames = ['level_01',];
+  bool playSounds = true;
+  double soundVolume = 1.0;
+  Vector2 initialPosition = Vector2(0,0);
+  List<String> levelNames = ['level_01','level_02',];
   int currentLevelIndex = 0;
   @override
   FutureOr<void> onLoad() async {
     await images.loadAllImages();
+    FlameAudio.audioCache.loadAll(['hitHurt.wav','jump.wav','pickupCoin.wav','powerUp.wav']);
     _loadLevel();
     if(showControls){
       addJoystick();
@@ -50,7 +56,7 @@ class PixelAdventure extends FlameGame
             images.fromCache('Buttons/Joystick.png'),
           ),
         ),
-        margin: const EdgeInsets.only(left: 32, bottom: 32));
+        margin: const EdgeInsets.only(left: 20, bottom: 32));
     // findGame()?.add(joystickComponent);
     add(joystickComponent);
     }
@@ -79,9 +85,13 @@ class PixelAdventure extends FlameGame
       currentLevelIndex++;
       _loadLevel();
     }else{
+      currentLevelIndex=0;
       _loadLevel();
       //no more levels
     }
+    if(showControls){
+      addJoystick();
+      add(JumpButton());}
   }
   void _loadLevel() {
     removeWhere((component) => component.isLoaded);
