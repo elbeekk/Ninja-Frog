@@ -11,12 +11,13 @@ class Fruit extends SpriteAnimationComponent with HasGameRef<PixelAdventure>,Col
   Fruit({this.fruit = 'Apple', position, size})
       : super(position: position, size: size);
   // {debugMode = true;}
-  bool _collected=false;
+
   final double stepTime = 0.05;
   final hitbox = CustomHitBox(offsetX: 10, offsetY: 10, width: 12, height: 12);
 
   @override
   FutureOr<void> onLoad() {
+    priority=-1;
     add(
       RectangleHitbox(
         position: Vector2(hitbox.offsetX, hitbox.offsetY),
@@ -37,19 +38,17 @@ class Fruit extends SpriteAnimationComponent with HasGameRef<PixelAdventure>,Col
     return super.onLoad();
   }
 
-  void collidingWithPlayer() {
-    if(!_collected){
-      animation = SpriteAnimation.fromFrameData(
-        game.images.fromCache('Items/Fruits/Collected.png'),
-        SpriteAnimationData.sequenced(
+  void collidingWithPlayer() async{
+    animation = SpriteAnimation.fromFrameData(
+      game.images.fromCache('Items/Fruits/Collected.png'),
+      SpriteAnimationData.sequenced(
           amount: 7,
           stepTime: stepTime,
           textureSize: Vector2.all(32),
           loop: false
         ),
       );
-      _collected=true;
-    }
+    await animationTicker?.completed;
     Future.delayed(const Duration(milliseconds: 100),() => removeFromParent(),);
     // removeFromParent();
   }

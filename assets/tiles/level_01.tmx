@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="70">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="40" height="23" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="82">
  <tileset firstgid="1" source="pixel_adventure.tsx"/>
  <layer id="1" name="Background" width="40" height="23">
   <data encoding="csv">
@@ -11,18 +11,18 @@
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,40,41,42,0,0,0,0,0,0,0,0,0,0,0,0,0,40,41,42,0,0,0,0,0,0,111,24,24,24,
-24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
-24,24,24,113,40,41,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,41,42,111,24,24,24,
+24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
+24,24,24,113,40,41,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,13,14,15,0,0,0,0,0,13,14,15,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
-24,24,24,113,40,41,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,41,42,111,24,24,24,
+24,24,24,113,40,41,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,41,41,42,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,113,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
-24,24,24,113,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,111,24,24,24,
-24,24,24,113,29,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,111,24,24,24,
-24,24,24,113,51,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,52,53,111,24,24,24,
+24,24,24,113,7,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
+24,24,24,113,29,30,30,30,30,30,30,30,30,30,30,30,30,30,30,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
+24,24,24,113,51,52,52,52,52,52,52,52,52,52,52,52,52,52,52,53,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,111,24,24,24,
 24,24,24,114,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,90,115,24,24,24,
 24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,
 24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24
@@ -30,23 +30,21 @@
  </layer>
  <objectgroup id="3" name="Collisions">
   <object id="22" x="48" y="32" width="16" height="288"/>
-  <object id="23" x="64" y="272" width="512" height="48"/>
+  <object id="23" x="64" y="271.844" width="256.667" height="48.0625"/>
   <object id="26" x="576" y="32" width="16" height="288"/>
   <object id="27" x="64" y="32" width="512" height="16"/>
-  <object id="28" x="304" y="128" width="48" height="16"/>
   <object id="29" x="368" y="192" width="48" height="16"/>
   <object id="30" x="240" y="192" width="48" height="16"/>
   <object id="31" type="Platform" x="64" y="208" width="48" height="14.6667"/>
   <object id="41" type="Platform" x="64.5" y="144.667" width="48" height="14.6667"/>
-  <object id="42" type="Platform" x="529.333" y="146" width="48" height="14.6667"/>
-  <object id="43" type="Platform" x="529.333" y="210" width="48" height="14.6667"/>
+  <object id="43" type="Platform" x="511.333" y="210" width="66" height="14.6667"/>
   <object id="49" type="Platform" x="175" y="113.167" width="48" height="14.6667"/>
   <object id="50" type="Platform" x="430" y="111.333" width="48" height="14.6667"/>
+  <object id="70" x="320" y="320" width="272" height="16"/>
  </objectgroup>
  <objectgroup id="2" name="SpawnPoints">
-  <object id="14" name="Player" type="Player" x="304" y="240" width="32" height="32"/>
+  <object id="14" name="Player" type="Player" x="240" y="240" width="32" height="32"/>
   <object id="52" name="Bananas" type="Fruit" x="184" y="68.6667" width="32" height="32"/>
-  <object id="54" name="Cherries" type="Fruit" x="312" y="83.3333" width="32" height="32"/>
   <object id="55" name="Apple" type="Fruit" x="438.667" y="67.3333" width="32" height="32"/>
   <object id="56" name="Apple" type="Fruit" x="465.333" y="142" width="32" height="32"/>
   <object id="57" name="Apple" type="Fruit" x="466" y="176.667" width="32" height="32"/>
@@ -58,9 +56,22 @@
   <object id="63" name="Cherries" type="Fruit" x="254" y="148" width="32" height="32"/>
   <object id="64" name="Kiwi" type="Fruit" x="70.6667" y="102" width="32" height="32"/>
   <object id="65" name="Kiwi" type="Fruit" x="72" y="169.333" width="32" height="32"/>
-  <object id="66" name="Kiwi" type="Fruit" x="534.667" y="104.667" width="32" height="32"/>
-  <object id="67" name="Kiwi" type="Fruit" x="537.333" y="169.333" width="32" height="32"/>
   <object id="68" name="Melon" type="Fruit" x="70" y="231.333" width="32" height="32"/>
   <object id="69" name="Melon" type="Fruit" x="537.333" y="233.333" width="32" height="32"/>
+  <object id="71" type="Saw" x="432" y="304" width="32" height="32">
+   <properties>
+    <property name="isVertical" type="bool" value="false"/>
+    <property name="offNeg" type="float" value="7"/>
+    <property name="offPos" type="float" value="7"/>
+   </properties>
+  </object>
+  <object id="73" type="Saw" x="320" y="144" width="32" height="32">
+   <properties>
+    <property name="isVertical" type="bool" value="true"/>
+    <property name="offNeg" type="float" value="5"/>
+    <property name="offPos" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="81" type="Checkpoint" x="512" y="144" width="64" height="64"/>
  </objectgroup>
 </map>

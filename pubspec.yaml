@@ -66,10 +66,13 @@ flutter:
     - assets/images/Buttons/
     - assets/images/Background/
     - assets/images/Items/Fruits/
+    - assets/images/Items/Checkpoints/Checkpoint/
+    - assets/images/Traps/Saw/
     - assets/images/Main Characters/Mask Dude/
     - assets/images/Main Characters/Ninja Frog/
     - assets/images/Main Characters/Pink Man/
     - assets/images/Main Characters/Virtual Guy/
+    - assets/images/Main Characters/
     - assets/tiles/
 #     - images/a_dot_ham.jpeg
 
