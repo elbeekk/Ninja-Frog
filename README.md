@@ -4,9 +4,9 @@ Developed using Flutter framework and Flame engine
 
 # Sources to check this game out
 
-- For pc [https://ninja-frog.vercel.app/](url)
+- For pc [web](https://ninja-frog.vercel.app/)
   
-- For android [https://t.me/c/1972023699/19](url)
+- For android [apk](https://t.me/c/1972023699/19)
 
 # Gameplay
 
