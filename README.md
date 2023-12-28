@@ -1,4 +1,3 @@
-
 # Ninja Frog
 
 Developed using Flutter framework and Flame engine
@@ -11,4 +10,7 @@ Developed using Flutter framework and Flame engine
 
 # Gameplay
 
-[screen-capture.webm](https://github.com/elbeekk/Ninja-Frog/assets/121304208/6eb4156b-257d-4fbf-812a-0e318700db9c)
+
+
+https://github.com/elbeekk/Ninja-Frog/assets/121304208/7d84653e-44d5-4d95-b1f1-b8d01f75e6f4
+
