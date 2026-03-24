@@ -1,30 +1,20 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:my_first_game/main.dart';
+import 'package:my_first_game/ninja_frog_app.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    // await tester.pumpWidget(const MyApp());
+  testWidgets('launcher exposes the upgraded app flow', (tester) async {
+    await tester.pumpWidget(const NinjaFrogApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('NINJA FROG'), findsOneWidget);
+    expect(find.text('PLAY'), findsOneWidget);
+    expect(find.text('STAGES'), findsOneWidget);
+    expect(find.text('CONTROLS'), findsNothing);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    await tester.tap(find.text('STAGES'));
+    await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('STAGES'), findsWidgets);
+    expect(find.textContaining('CANOPY RUN'), findsOneWidget);
+    expect(find.textContaining('RUINS RELAY'), findsOneWidget);
   });
 }
