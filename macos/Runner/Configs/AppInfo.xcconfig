@@ -8,7 +8,7 @@
 PRODUCT_NAME = my_first_game
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.myFirstGame
+PRODUCT_BUNDLE_IDENTIFIER = com.elbekmirzamakhmudov.ninjafrog
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2026 Elbek Mirzamakhmudov. All rights reserved.

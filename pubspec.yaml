@@ -60,11 +60,22 @@ dependency_overrides:
 
 flutter_launcher_icons:
   android: "launcher_icon"
-  image_path: "assets/images/Main Characters/Ninja Frog/Fall (32x32).png"
+  ios: true
+  image_path: "assets/images/app_icon_logo.png"
   min_sdk_android: 21
+  remove_alpha_ios: true
   web:
     generate: true
-    image_path: "assets/images/Main Characters/Ninja Frog/Fall (32x32).png"
+    image_path: "assets/images/app_icon_logo.png"
+    background_color: "#faf9f4"
+    theme_color: "#7cab14"
+  macos:
+    generate: true
+    image_path: "assets/images/app_icon_logo.png"
+  windows:
+    generate: true
+    image_path: "assets/images/app_icon_logo.png"
+    icon_size: 48
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

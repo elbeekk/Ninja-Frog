@@ -1,11 +1,11 @@
 {
-    "name": "my_first_game",
-    "short_name": "my_first_game",
+    "name": "Ninja Frog",
+    "short_name": "NinjaFrog",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FAF9F4",
+    "theme_color": "#7CAB14",
+    "description": "A pixel platformer starring Ninja Frog.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
